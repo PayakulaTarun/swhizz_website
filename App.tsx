@@ -51,16 +51,16 @@ const App: React.FC = () => {
 
   useEffect(() => {
     if (isLoading || selectedCourse || selectedService || isEnrolling || showAboutPage || showBatchesPage || showAllCoursesPage || showPlacementsPage) return;
-    
+
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
-          
+
           const target = entry.target as HTMLElement;
           const lightBg = target.dataset.bgLight;
           const darkBg = target.dataset.bgDark;
-          
+
           if (theme === 'light' && lightBg) {
             document.body.style.backgroundColor = lightBg;
           } else if (theme === 'dark' && darkBg) {
@@ -74,7 +74,7 @@ const App: React.FC = () => {
 
     const revealElements = document.querySelectorAll('.section-reveal, .reveal, .stagger-reveal');
     revealElements.forEach(el => revealObserver.observe(el));
-    
+
     return () => revealObserver.disconnect();
   }, [isLoading, selectedCourse, selectedService, isEnrolling, showAboutPage, showBatchesPage, showAllCoursesPage, showPlacementsPage, theme]);
 
@@ -196,7 +196,7 @@ const App: React.FC = () => {
       setShowBatchesPage(false);
       setShowAllCoursesPage(false);
       setShowPlacementsPage(false);
-      
+
       setTimeout(() => {
         const element = document.getElementById(id);
         if (element) {
@@ -225,16 +225,12 @@ const App: React.FC = () => {
     return (
       <div className="fixed inset-0 z-[9999] bg-[#fcfbf7] dark:bg-[#020617] flex flex-col items-center justify-center transition-colors duration-1000">
         <div className="relative mb-8">
-          <div className="w-24 h-24 luxury-gradient rounded-[24px] flex items-center justify-center text-white font-bold text-5xl shadow-2xl animate-pulse">
-            S
-          </div>
-          <div className="absolute -inset-4 border-2 border-teal-500/20 rounded-[32px] animate-[spin_4s_linear_infinite]" />
-        </div>
-        <div className="text-center">
-          <h1 className="text-2xl font-display font-bold text-slate-900 dark:text-white tracking-widest mb-2">SWHIZZ</h1>
-          <p className="text-[10px] tracking-[0.4em] uppercase text-teal-600 font-bold opacity-0 animate-[fade-in_1s_ease-out_forwards_0.5s]">
-            Excellence in IT
-          </p>
+          <img
+            src="/images/logo.png"
+            alt="Swhizz Technologies"
+            className="w-60 h-auto animate-pulse"
+          />
+          <div className="absolute -inset-4 border-2 border-teal-500/20 rounded-full animate-[spin_4s_linear_infinite]" />
         </div>
       </div>
     );
@@ -243,9 +239,9 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen relative transition-colors duration-1000">
       {(!selectedCourse && !selectedService && !isEnrolling && !showAboutPage && !showBatchesPage && !showAllCoursesPage && !showPlacementsPage) && (
-        <Navbar 
-          theme={theme} 
-          onToggleTheme={toggleTheme} 
+        <Navbar
+          theme={theme}
+          onToggleTheme={toggleTheme}
           onNavigateToService={handleSelectService}
           onNavigateToCourse={handleSelectCourse}
           onNavigateToAbout={handleOpenAbout}
@@ -258,9 +254,9 @@ const App: React.FC = () => {
         {isEnrolling ? (
           <EnrollmentForm onBack={handleCloseDetail} theme={theme} />
         ) : selectedCourse ? (
-          <CourseDetail 
-            courseId={selectedCourse} 
-            onBack={handleCloseDetail} 
+          <CourseDetail
+            courseId={selectedCourse}
+            onBack={handleCloseDetail}
             onNavigateToCourse={handleSelectCourse}
             theme={theme}
           />
@@ -277,11 +273,11 @@ const App: React.FC = () => {
         ) : showAllCoursesPage ? (
           <AllCoursesPage onBack={handleCloseDetail} onSelectCourse={handleSelectCourse} theme={theme} />
         ) : showPlacementsPage ? (
-          <PlacementsPage 
-            onBack={handleCloseDetail} 
+          <PlacementsPage
+            onBack={handleCloseDetail}
             onEnroll={handleOpenEnrollment}
             onContact={() => handleNavigateToSection('contact')}
-            theme={theme} 
+            theme={theme}
           />
         ) : (
           <>

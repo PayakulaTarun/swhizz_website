@@ -100,12 +100,12 @@ const Navbar: React.FC<NavbarProps> = ({
           <img
             src="/images/logo.png"
             alt="Swhizz Technologies Logo"
-            className="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-500"
+            className="h-20 w-auto object-contain group-hover:scale-105 transition-transform duration-500"
           />
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => {
             if (link.id === 'services') {
               return (
@@ -198,7 +198,9 @@ const Navbar: React.FC<NavbarProps> = ({
               </button>
             );
           })}
+        </div>
 
+        <div className="hidden md:flex items-center gap-6">
           <button
             onClick={onToggleTheme}
             className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-700 dark:text-teal-400"

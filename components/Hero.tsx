@@ -20,27 +20,27 @@ const Hero: React.FC<HeroProps> = ({ onEnroll }) => {
             <Star className="w-4 h-4 fill-teal-600 animate-pulse-elegant" />
             10 Years of Excellence
           </div>
-          
-          <h1 className="text-5xl sm:text-7xl xl:text-9xl font-display font-bold leading-[1.1] text-slate-900 dark:text-white">
+
+          <h1 className="text-5xl sm:text-7xl xl:text-9xl font-bold leading-[1.1] text-slate-900 dark:text-white" style={{ fontFamily: 'Jost, sans-serif' }}>
             The Key <br /> to <span className="text-teal-600 italic relative inline-block">
               Success
               <span className="absolute -bottom-2 left-0 w-full h-1 bg-teal-500/20 rounded-full" />
             </span>.
           </h1>
-          
+
           <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed font-light">
             Your dream job is just one step away. We specialize in transforming <span className="font-medium text-slate-900 dark:text-white">Freshers, Non-IT, and Career Gap</span> candidates into industry-ready IT experts.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button 
+            <button
               onClick={onEnroll}
               className="px-8 sm:px-12 py-4 sm:py-5 bg-[#020617] text-white rounded-full font-bold text-base sm:text-lg hover:scale-105 transition-all flex items-center justify-center gap-3 group shadow-[0_20px_40px_-10px_rgba(0,0,0,0.3)]"
             >
               <span className="relative z-10">Join Swhizz Today</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform relative z-10" />
             </button>
-            <button 
+            <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-8 sm:px-12 py-4 sm:py-5 bg-white dark:bg-slate-900/50 border-2 border-teal-600/30 dark:border-teal-600/50 text-teal-700 dark:text-teal-400 rounded-full font-bold text-base sm:text-lg hover:bg-teal-50 dark:hover:bg-teal-900/20 hover:border-teal-600 luxury-hover transition-all flex items-center justify-center gap-3 shadow-sm group"
             >
@@ -67,9 +67,9 @@ const Hero: React.FC<HeroProps> = ({ onEnroll }) => {
 
         <div className="relative hidden lg:block reveal" style={{ transitionDelay: '500ms' }}>
           <div className="relative z-10 rounded-[40px] xl:rounded-[60px] overflow-hidden border-[15px] xl:border-[20px] border-white dark:border-slate-800 shadow-2xl rotate-2 hover:rotate-0 transition-all duration-700 group">
-            <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1000" 
-              alt="Successful Professional" 
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1000"
+              alt="Successful Professional"
               className="w-full h-auto object-cover aspect-[4/5] group-hover:scale-105 transition-transform duration-[2s]"
             />
           </div>
