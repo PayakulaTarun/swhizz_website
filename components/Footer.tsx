@@ -38,7 +38,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigateToSection }) => {
               </div>
             </div>
             <p className="text-slate-400 font-light leading-relaxed max-w-sm italic text-sm">
-              "We don't just teach skills; we build IT professionals. Join the elite ranks of Swhizz graduates."
+              "We don't just teach skills; we build IT professionals. Join the ranks of Swhizz graduates."
             </p>
             <div className="flex flex-wrap gap-3">
               {[
@@ -108,7 +108,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigateToSection }) => {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[9px] uppercase tracking-[0.2em] text-slate-500 font-bold">
-          <p>© 2024 Swhizz Technologies. Hyderabad's Elite Training Hub.</p>
+          <p>© 2024 Swhizz Technologies.</p>
           <div className="flex gap-8">
             <span className="cursor-pointer hover:text-white transition-colors">Privacy Policy</span>
             <span className="cursor-pointer hover:text-white transition-colors">Terms of Service</span>

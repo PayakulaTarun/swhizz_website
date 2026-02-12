@@ -242,7 +242,7 @@ const Navbar: React.FC<NavbarProps> = ({
             </button>
           ))}
           <div className="h-px bg-slate-100 dark:bg-slate-800" />
-          <p className="text-[10px] uppercase tracking-[0.2em] text-teal-600 font-bold mb-[-12px]">Elite Courses</p>
+          <p className="text-[10px] uppercase tracking-[0.2em] text-teal-600 font-bold mb-[-12px]">Swhizz Courses</p>
           {coursesList.map((course) => (
             <button
               key={course.id}

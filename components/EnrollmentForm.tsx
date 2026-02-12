@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 // Added Users to the imports from lucide-react
-import { 
-  ArrowLeft, Send, CheckCircle2, Star, Sparkles, User, Mail, Phone, 
+import {
+  ArrowLeft, Send, CheckCircle2, Star, Sparkles, User, Mail, Phone,
   MapPin, GraduationCap, Briefcase, Zap, Trophy, ShieldCheck, Users
 } from 'lucide-react';
 
@@ -43,9 +43,9 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onBack, theme }) => {
         </div>
         <h2 className="text-4xl sm:text-6xl font-display font-bold text-slate-900 dark:text-white italic mb-6">Application Received.</h2>
         <p className="text-xl text-slate-500 dark:text-slate-400 font-light max-w-2xl mb-12">
-          Your path to IT excellence has been registered. Our elite career advisors will contact you within 24 hours to schedule your roadmap session.
+          Your path to IT excellence has been registered. Our Swhizz career advisors will contact you within 24 hours to schedule your roadmap session.
         </p>
-        <button 
+        <button
           onClick={onBack}
           className="px-12 py-5 luxury-gradient text-white rounded-full font-bold shadow-2xl hover:scale-105 transition-all shimmer-effect"
         >
@@ -65,7 +65,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onBack, theme }) => {
         </button>
         <div className="flex items-center gap-2">
           <Star className="w-4 h-4 fill-teal-500 text-teal-500" />
-          <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-400">Elite Series Enrollment</span>
+          <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-400">Swhizz Series Enrollment</span>
         </div>
       </nav>
 
@@ -74,7 +74,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onBack, theme }) => {
         <div className="lg:w-1/3 bg-[#020617] text-white p-12 lg:p-20 relative overflow-hidden flex flex-col justify-center">
           <div className="absolute inset-0 cyber-grid opacity-20 pointer-events-none" />
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-teal-500/10 blur-[150px] rounded-full" />
-          
+
           <div className="relative z-10 space-y-12">
             <div className="space-y-4">
               <h2 className="text-[10px] uppercase tracking-[0.5em] text-teal-400 font-bold">The Success Blueprint</h2>
@@ -110,7 +110,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onBack, theme }) => {
               <h1 className="text-5xl sm:text-7xl font-display font-bold text-slate-900 dark:text-white italic tracking-tighter leading-[0.9]">
                 Application of <span className="text-teal-600">Excellence</span>.
               </h1>
-              <p className="text-slate-500 dark:text-slate-400 text-xl font-light">Complete your profile to secure your spot in our upcoming elite batch.</p>
+              <p className="text-slate-500 dark:text-slate-400 text-xl font-light">Complete your profile to secure your spot in our upcoming Swhizz batch.</p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-8 stagger-reveal active">
@@ -119,12 +119,12 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onBack, theme }) => {
                   <label className="text-[10px] uppercase tracking-widest font-bold text-slate-400 dark:text-slate-500 group-focus-within:text-teal-600 transition-colors">Full Name</label>
                   <div className="relative">
                     <User className="absolute left-6 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-300" />
-                    <input 
+                    <input
                       required
-                      type="text" 
-                      placeholder="e.g., Alexander Smith" 
+                      type="text"
+                      placeholder="e.g., Alexander Smith"
                       className="w-full pl-16 pr-8 py-5 rounded-[24px] bg-slate-50 dark:bg-slate-900 border-2 border-transparent focus:border-teal-500 focus:bg-white dark:focus:bg-slate-800 focus:ring-8 focus:ring-teal-500/5 transition-all outline-none text-slate-900 dark:text-white"
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     />
                   </div>
                 </div>
@@ -132,12 +132,12 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onBack, theme }) => {
                   <label className="text-[10px] uppercase tracking-widest font-bold text-slate-400 dark:text-slate-500 group-focus-within:text-teal-600 transition-colors">Email Address</label>
                   <div className="relative">
                     <Mail className="absolute left-6 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-300" />
-                    <input 
+                    <input
                       required
-                      type="email" 
-                      placeholder="alex@example.com" 
+                      type="email"
+                      placeholder="alex@example.com"
                       className="w-full pl-16 pr-8 py-5 rounded-[24px] bg-slate-50 dark:bg-slate-900 border-2 border-transparent focus:border-teal-500 focus:bg-white dark:focus:bg-slate-800 focus:ring-8 focus:ring-teal-500/5 transition-all outline-none text-slate-900 dark:text-white"
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     />
                   </div>
                 </div>
@@ -148,12 +148,12 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onBack, theme }) => {
                   <label className="text-[10px] uppercase tracking-widest font-bold text-slate-400 dark:text-slate-500 group-focus-within:text-teal-600 transition-colors">Phone Number</label>
                   <div className="relative">
                     <Phone className="absolute left-6 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-300" />
-                    <input 
+                    <input
                       required
-                      type="tel" 
-                      placeholder="+91 9059002244" 
+                      type="tel"
+                      placeholder="+91 9059002244"
                       className="w-full pl-16 pr-8 py-5 rounded-[24px] bg-slate-50 dark:bg-slate-900 border-2 border-transparent focus:border-teal-500 focus:bg-white dark:focus:bg-slate-800 focus:ring-8 focus:ring-teal-500/5 transition-all outline-none text-slate-900 dark:text-white"
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     />
                   </div>
                 </div>
@@ -161,10 +161,10 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onBack, theme }) => {
                   <label className="text-[10px] uppercase tracking-widest font-bold text-slate-400 dark:text-slate-500 group-focus-within:text-teal-600 transition-colors">Target Program</label>
                   <div className="relative">
                     <GraduationCap className="absolute left-6 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-300" />
-                    <select 
+                    <select
                       required
                       className="w-full pl-16 pr-8 py-5 rounded-[24px] bg-slate-50 dark:bg-slate-900 border-2 border-transparent focus:border-teal-500 focus:bg-white dark:focus:bg-slate-800 focus:ring-8 focus:ring-teal-500/5 transition-all outline-none appearance-none text-slate-900 dark:text-white"
-                      onChange={(e) => setFormData({...formData, course: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, course: e.target.value })}
                     >
                       <option value="" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Select a course...</option>
                       <option value="java" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Java Full Stack Development</option>
@@ -185,17 +185,17 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onBack, theme }) => {
                 <label className="text-[10px] uppercase tracking-widest font-bold text-slate-400 dark:text-slate-500 group-focus-within:text-teal-600 transition-colors">Professional Background</label>
                 <div className="relative">
                   <Briefcase className="absolute left-6 top-6 w-5 h-5 text-slate-300" />
-                  <textarea 
-                    placeholder="Briefly describe your background (e.g., Non-IT, Fresh Graduate, 2-Year Career Gap...)" 
+                  <textarea
+                    placeholder="Briefly describe your background (e.g., Non-IT, Fresh Graduate, 2-Year Career Gap...)"
                     rows={4}
                     className="w-full pl-16 pr-8 py-5 rounded-[24px] bg-slate-50 dark:bg-slate-900 border-2 border-transparent focus:border-teal-500 focus:bg-white dark:focus:bg-slate-800 focus:ring-8 focus:ring-teal-500/5 transition-all outline-none text-slate-900 dark:text-white"
-                    onChange={(e) => setFormData({...formData, background: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, background: e.target.value })}
                   ></textarea>
                 </div>
               </div>
 
               <div className="pt-8">
-                <button 
+                <button
                   type="submit"
                   className="w-full py-6 luxury-gradient text-white rounded-[24px] font-bold text-xl luxury-hover shadow-2xl shimmer-effect flex items-center justify-center gap-4 group"
                 >

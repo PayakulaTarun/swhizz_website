@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { 
+import {
   ArrowLeft, Star, Trophy, Users, Award, X, Clock, MapPin, ArrowUpRight,
   Code, Layout, Shield, Database, Search as SearchIcon, Cloud, Sparkles, Rocket,
   CheckCircle2, MessageSquare, Quote, StarHalf, Terminal, Cpu, HardDrive, Globe,
@@ -67,10 +67,10 @@ const courseData: Record<string, CourseData> = {
     level: "Beginner to Architect",
     icon: Code,
     modules: [
-      { name: "Core Java & OOPS", details: "Deep dive into Multithreading, Collections, JVM internals, and Advanced Design Patterns.", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=400" },
+      { name: "Core Java & OOPS", details: "Deep dive into Multithreading, Collections, JVM internals, and Advanced Design Patterns.", image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&q=80&w=400" },
       { name: "Modern Frontend", details: "Building pixel-perfect, responsive UIs with React JS, Hooks, and high-end state management.", image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=400" },
-      { name: "Backend Mastery", details: "Spring Boot architecture, Spring Security, Hibernate ORM, and Robust RESTful APIs.", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" },
-      { name: "Cloud & Microservices", details: "Containerization with Docker, Kubernetes orchestration, and AWS cloud deployment strategies.", image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&q=80&w=400" }
+      { name: "Backend Mastery", details: "Spring Boot architecture, Spring Security, Hibernate ORM, and Robust RESTful APIs.", image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=400" },
+      { name: "Cloud & Microservices", details: "Containerization with Docker, Kubernetes orchestration, and AWS cloud deployment strategies.", image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=400" }
     ],
     tools: ["openjdk", "springboot", "react", "mysql", "docker", "amazonwebservices", "hibernate", "git"],
     career: "Full Stack Lead, Backend Architect, Senior Java Engineer",
@@ -118,10 +118,10 @@ const courseData: Record<string, CourseData> = {
     level: "All Levels",
     icon: Layout,
     modules: [
-      { name: "Admin Foundations", details: "Security models, Data Architecture, and Declarative Process Automation.", image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=400" },
-      { name: "Apex Programming", details: "Trigger frameworks, Batch Apex, and Object-Oriented development on the cloud.", image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400" },
-      { name: "LWC Development", details: "Modern JavaScript components and reactive UI frameworks for the Salesforce ecosystem.", image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=400" },
-      { name: "Cloud Integration", details: "Building bridges between Salesforce and external systems using high-speed REST APIs.", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=400" }
+      { name: "Admin Foundations", details: "Security models, Data Architecture, and Declarative Process Automation.", image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=400" },
+      { name: "Apex Programming", details: "Trigger frameworks, Batch Apex, and Object-Oriented development on the cloud.", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" },
+      { name: "LWC Development", details: "Modern JavaScript components and reactive UI frameworks for the Salesforce ecosystem.", image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=400" },
+      { name: "Cloud Integration", details: "Building bridges between Salesforce and external systems using high-speed REST APIs.", image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" }
     ],
     tools: ["salesforce", "javascript", "visualstudiocode", "github", "postman"],
     career: "Salesforce Architect, Tech Lead, CRM Consultant",
@@ -169,9 +169,9 @@ const courseData: Record<string, CourseData> = {
     level: "Professional",
     icon: Cloud,
     modules: [
-      { name: "Linux Administration", details: "Mastering the shell and operating system fundamentals for high-performance servers.", image: "https://images.unsplash.com/photo-1605745341112-85968b193ef5?auto=format&fit=crop&q=80&w=400" },
+      { name: "Linux Administration", details: "Mastering the shell and operating system fundamentals for high-performance servers.", image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=400" },
       { name: "Container Orchestration", details: "Deep dive into Docker images and production-grade Kubernetes clusters.", image: "https://images.unsplash.com/photo-1605745341112-85968b193ef5?auto=format&fit=crop&q=80&w=400" },
-      { name: "Automation Pipelines", details: "Building CI/CD workflows with Jenkins, GitLab, and Terraform for multi-cloud deployments.", image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&q=80&w=400" },
+      { name: "Automation Pipelines", details: "Building CI/CD workflows with Jenkins, GitLab, and Terraform for multi-cloud deployments.", image: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&q=80&w=400" },
       { name: "AWS Solutions Architect", details: "Designing scalable, fault-tolerant systems using AWS EC2, S3, RDS, and Lambda.", image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" }
     ],
     tools: ["amazonwebservices", "docker", "kubernetes", "jenkins", "terraform", "ansible", "linux"],
@@ -221,9 +221,9 @@ const courseData: Record<string, CourseData> = {
     icon: ShieldAlert,
     modules: [
       { name: "Ethical Hacking", details: "Footprinting, Reconnaissance, and scanning networks for vulnerabilities.", image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=400" },
-      { name: "Web App Security", details: "OWASP Top 10, SQL injection, XSS, and broken authentication testing.", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=400" },
-      { name: "Network VAPT", details: "Attacking wireless networks, privilege escalation, and lateral movement.", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=400" },
-      { name: "SOC Operations", details: "Incident response, log analysis with Splunk, and threat hunting.", image: "https://images.unsplash.com/photo-1510511459019-5dee99c48db9?auto=format&fit=crop&q=80&w=400" }
+      { name: "Web App Security", details: "OWASP Top 10, SQL injection, XSS, and broken authentication testing.", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" },
+      { name: "Network VAPT", details: "Attacking wireless networks, privilege escalation, and lateral movement.", image: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&q=80&w=400" },
+      { name: "SOC Operations", details: "Incident response, log analysis with Splunk, and threat hunting.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=400" }
     ],
     tools: ["kalilinux", "wireshark", "metasploit", "splunk", "python", "nmap", "burpsuite"],
     career: "SOC Analyst, Pentester, Security Architect",
@@ -271,9 +271,9 @@ const courseData: Record<string, CourseData> = {
     level: "All Levels",
     icon: BrainCircuit,
     modules: [
-      { name: "Python for Data", details: "NumPy, Pandas, and Matplotlib for high-end data manipulation.", image: "https://images.unsplash.com/photo-1551288560-12939103c80a?auto=format&fit=crop&q=80&w=400" },
-      { name: "Machine Learning", details: "Supervised and unsupervised learning, regressions, and clustering.", image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=400" },
-      { name: "Deep Learning", details: "Neural Networks, CNNs for Vision, and RNNs for Sequential data.", image: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&q=80&w=400" },
+      { name: "Python for Data", details: "NumPy, Pandas, and Matplotlib for high-end data manipulation.", image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=400" },
+      { name: "Machine Learning", details: "Supervised and unsupervised learning, regressions, and clustering.", image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=400" },
+      { name: "Deep Learning", details: "Neural Networks, CNNs for Vision, and RNNs for Sequential data.", image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=400" },
       { name: "AI Applications", details: "NLP, Computer Vision, and Generative AI implementation strategies.", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=400" }
     ],
     tools: ["python", "tensorflow", "pytorch", "tableau", "jupyter", "scikitlearn", "pandas"],
@@ -322,10 +322,10 @@ const courseData: Record<string, CourseData> = {
     level: "Beginner to Pro",
     icon: SearchIcon,
     modules: [
-      { name: "Manual Testing", details: "SDLC, STLC, Test cases, and Defect life cycle fundamentals.", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400" },
-      { name: "Selenium Automation", details: "Java based automation for cross-browser web application testing.", image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=400" },
+      { name: "Manual Testing", details: "SDLC, STLC, Test cases, and Defect life cycle fundamentals.", image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=400" },
+      { name: "Selenium Automation", details: "Java based automation for cross-browser web application testing.", image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80&w=400" },
       { name: "API Testing", details: "Testing RESTful services using Postman and RestAssured.", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=400" },
-      { name: "Performance Testing", details: "Load testing and stress testing using Apache JMeter.", image: "https://images.unsplash.com/photo-1551288560-12939103c80a?auto=format&fit=crop&q=80&w=400" }
+      { name: "Performance Testing", details: "Load testing and stress testing using Apache JMeter.", image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=400" }
     ],
     tools: ["selenium", "postman", "apachejmeter", "jenkins", "openjdk", "github", "testng"],
     career: "QA Automation Engineer, Test Lead, SDET",
@@ -377,7 +377,7 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseId, onBack, onNavigat
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -444,89 +444,89 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseId, onBack, onNavigat
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900 pb-24 overflow-x-hidden selection:bg-teal-500/30">
-      
+
       {/* Search Overlay */}
       {showSearch && (
         <div className="fixed inset-0 z-[100] bg-white dark:bg-slate-950 flex flex-col p-6 sm:p-20 transition-all duration-500 overflow-y-auto">
-           <div className="max-w-4xl mx-auto w-full">
-              <div className="flex justify-between items-center mb-10">
-                 <div className="flex items-center gap-4">
-                    <Sparkles className="w-10 h-10 text-teal-500 animate-pulse" />
-                    <h2 className="text-4xl font-display font-bold text-slate-900 dark:text-white italic">Elite Search Hub</h2>
-                 </div>
-                 <button onClick={() => { setShowSearch(false); setSearchQuery(""); }} className="w-14 h-14 rounded-full bg-slate-900 text-white flex items-center justify-center hover:bg-red-500 transition-all shadow-2xl">
-                    <X className="w-7 h-7" />
-                 </button>
+          <div className="max-w-4xl mx-auto w-full">
+            <div className="flex justify-between items-center mb-10">
+              <div className="flex items-center gap-4">
+                <Sparkles className="w-10 h-10 text-teal-500 animate-pulse" />
+                <h2 className="text-4xl font-display font-bold text-slate-900 dark:text-white italic">Swhizz Search Hub</h2>
               </div>
-              
-              <div className="relative mb-12 flex items-center group">
-                 <div className="absolute left-4 w-16 h-16 flex items-center justify-center bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900 rounded-full border-[3px] border-slate-900 dark:border-teal-400 z-10 shadow-lg">
-                    <SearchIcon className="w-7 h-7" />
-                 </div>
-                 <input 
-                    type="text" 
-                    placeholder="Type to search (e.g. Java, Cloud, Testing)..." 
-                    value={searchQuery}
-                    autoFocus
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-24 pr-8 py-8 rounded-full bg-white dark:bg-slate-900 border-[3px] border-slate-900 dark:border-teal-500 focus:border-teal-600 focus:ring-8 focus:ring-teal-500/10 focus:outline-none text-3xl transition-all shadow-2xl font-display italic placeholder:text-slate-300 text-slate-900 dark:text-white"
-                 />
-                 <div className="absolute inset-0 rounded-full border border-teal-500/20 pointer-events-none" />
-              </div>
-              
-              <div className="space-y-12">
-                <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-4">
-                   <p className="text-[12px] uppercase tracking-[0.5em] text-teal-600 font-bold">
-                     {searchQuery ? `Search Results (${filteredCourses.length})` : "Our Premium Programs"}
-                   </p>
-                </div>
+              <button onClick={() => { setShowSearch(false); setSearchQuery(""); }} className="w-14 h-14 rounded-full bg-slate-900 text-white flex items-center justify-center hover:bg-red-500 transition-all shadow-2xl">
+                <X className="w-7 h-7" />
+              </button>
+            </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-32">
-                   {filteredCourses.map(([id, course]) => (
-                      <button 
-                        key={id} 
-                        onClick={() => { onNavigateToCourse(id); setShowSearch(false); setSearchQuery(""); }} 
-                        className="flex flex-col gap-6 p-10 rounded-[48px] bg-slate-50 dark:bg-slate-900 border-[2px] border-slate-200 dark:border-slate-800 hover:border-teal-500 hover:bg-white dark:hover:bg-slate-800 hover:shadow-2xl transition-all group relative overflow-hidden text-left"
-                      >
-                         <div className="absolute top-0 right-0 w-48 h-48 bg-teal-500/5 blur-3xl rounded-full -mr-24 -mt-24 group-hover:bg-teal-500/10 transition-colors" />
-                         <div className="flex items-center gap-6 relative z-10">
-                            <div className="w-16 h-16 rounded-2xl bg-teal-500 text-white flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all shadow-lg"><course.icon className="w-8 h-8" /></div>
-                            <div>
-                               <h4 className="font-bold text-slate-900 dark:text-white text-2xl group-hover:text-teal-600 transition-colors">{course.title}</h4>
-                               <p className="text-[10px] text-slate-400 uppercase tracking-widest font-bold mt-1">{course.duration} • {course.level}</p>
-                            </div>
-                         </div>
-                         <p className="text-slate-500 dark:text-slate-400 text-sm font-light italic leading-relaxed line-clamp-2 relative z-10">{course.subtitle}</p>
-                         <div className="flex items-center gap-2 text-teal-600 font-bold text-[10px] uppercase tracking-widest mt-2 relative z-10">
-                            Explore Curriculum <ArrowUpRight className="w-4 h-4" />
-                         </div>
-                      </button>
-                   ))}
-                </div>
+            <div className="relative mb-12 flex items-center group">
+              <div className="absolute left-4 w-16 h-16 flex items-center justify-center bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900 rounded-full border-[3px] border-slate-900 dark:border-teal-400 z-10 shadow-lg">
+                <SearchIcon className="w-7 h-7" />
               </div>
-           </div>
+              <input
+                type="text"
+                placeholder="Type to search (e.g. Java, Cloud, Testing)..."
+                value={searchQuery}
+                autoFocus
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-24 pr-8 py-8 rounded-full bg-white dark:bg-slate-900 border-[3px] border-slate-900 dark:border-teal-500 focus:border-teal-600 focus:ring-8 focus:ring-teal-500/10 focus:outline-none text-3xl transition-all shadow-2xl font-display italic placeholder:text-slate-300 text-slate-900 dark:text-white"
+              />
+              <div className="absolute inset-0 rounded-full border border-teal-500/20 pointer-events-none" />
+            </div>
+
+            <div className="space-y-12">
+              <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-4">
+                <p className="text-[12px] uppercase tracking-[0.5em] text-teal-600 font-bold">
+                  {searchQuery ? `Search Results (${filteredCourses.length})` : "Our Premium Programs"}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-32">
+                {filteredCourses.map(([id, course]) => (
+                  <button
+                    key={id}
+                    onClick={() => { onNavigateToCourse(id); setShowSearch(false); setSearchQuery(""); }}
+                    className="flex flex-col gap-6 p-10 rounded-[48px] bg-slate-50 dark:bg-slate-900 border-[2px] border-slate-200 dark:border-slate-800 hover:border-teal-500 hover:bg-white dark:hover:bg-slate-800 hover:shadow-2xl transition-all group relative overflow-hidden text-left"
+                  >
+                    <div className="absolute top-0 right-0 w-48 h-48 bg-teal-500/5 blur-3xl rounded-full -mr-24 -mt-24 group-hover:bg-teal-500/10 transition-colors" />
+                    <div className="flex items-center gap-6 relative z-10">
+                      <div className="w-16 h-16 rounded-2xl bg-teal-500 text-white flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all shadow-lg"><course.icon className="w-8 h-8" /></div>
+                      <div>
+                        <h4 className="font-bold text-slate-900 dark:text-white text-2xl group-hover:text-teal-600 transition-colors">{course.title}</h4>
+                        <p className="text-[10px] text-slate-400 uppercase tracking-widest font-bold mt-1">{course.duration} • {course.level}</p>
+                      </div>
+                    </div>
+                    <p className="text-slate-500 dark:text-slate-400 text-sm font-light italic leading-relaxed line-clamp-2 relative z-10">{course.subtitle}</p>
+                    <div className="flex items-center gap-2 text-teal-600 font-bold text-[10px] uppercase tracking-widest mt-2 relative z-10">
+                      Explore Curriculum <ArrowUpRight className="w-4 h-4" />
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       )}
 
       {/* Fixed Header */}
       <nav className="fixed top-0 left-0 w-full z-[90] glass-effect py-4 px-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
-         <button onClick={onBack} className="group flex items-center gap-3 text-slate-900 dark:text-white font-bold text-[10px] uppercase tracking-[0.3em] transition-all">
-            <ArrowLeft className="w-5 h-5 group-hover:-translate-x-2 transition-transform" />
-            <span className="hidden sm:inline">Back to Hub</span>
+        <button onClick={onBack} className="group flex items-center gap-3 text-slate-900 dark:text-white font-bold text-[10px] uppercase tracking-[0.3em] transition-all">
+          <ArrowLeft className="w-5 h-5 group-hover:-translate-x-2 transition-transform" />
+          <span className="hidden sm:inline">Back to Hub</span>
+        </button>
+
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => setShowSearch(true)}
+            className="w-12 h-12 rounded-full bg-[#020617] flex items-center justify-center text-white transition-all shadow-xl active:scale-90"
+            title="Search Courses"
+          >
+            <SearchIcon className="w-6 h-6" />
           </button>
-          
-          <div className="flex items-center gap-4">
-             <button 
-                onClick={() => setShowSearch(true)} 
-                className="w-12 h-12 rounded-full bg-[#020617] flex items-center justify-center text-white transition-all shadow-xl active:scale-90"
-                title="Search Courses"
-             >
-                <SearchIcon className="w-6 h-6" />
-             </button>
-             <button onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})} className="px-10 py-3.5 teal-gradient text-white rounded-full text-[10px] font-bold uppercase tracking-[0.3em] shadow-xl hover:scale-105 transition-all">
-                Enroll Now
-             </button>
-          </div>
+          <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="px-10 py-3.5 teal-gradient text-white rounded-full text-[10px] font-bold uppercase tracking-[0.3em] shadow-xl hover:scale-105 transition-all">
+            Enroll Now
+          </button>
+        </div>
       </nav>
 
       {/* Section 1: Hero */}
@@ -536,7 +536,7 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseId, onBack, onNavigat
           <div className="space-y-8 reveal active">
             <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm text-teal-600 dark:text-teal-400 font-bold text-[10px] tracking-[0.3em] uppercase">
               <Star className="w-4 h-4 fill-teal-600" />
-              Elite Training Series
+              Swhizz Training Series
             </div>
             <div className="space-y-4">
               <h1 className="text-5xl sm:text-7xl font-display font-bold text-slate-900 dark:text-white leading-[0.9] italic tracking-tighter">
@@ -549,16 +549,16 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseId, onBack, onNavigat
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-4">
               <div className="space-y-1">
-                 <p className="text-[9px] uppercase tracking-widest text-slate-400 font-bold">Duration</p>
-                 <p className="text-slate-900 dark:text-white font-bold text-lg">{data.duration}</p>
+                <p className="text-[9px] uppercase tracking-widest text-slate-400 font-bold">Duration</p>
+                <p className="text-slate-900 dark:text-white font-bold text-lg">{data.duration}</p>
               </div>
               <div className="space-y-1">
-                 <p className="text-[9px] uppercase tracking-widest text-slate-400 font-bold">Level</p>
-                 <p className="text-slate-900 dark:text-white font-bold text-lg">{data.level}</p>
+                <p className="text-[9px] uppercase tracking-widest text-slate-400 font-bold">Level</p>
+                <p className="text-slate-900 dark:text-white font-bold text-lg">{data.level}</p>
               </div>
               <div className="space-y-1">
-                 <p className="text-[9px] uppercase tracking-widest text-slate-400 font-bold">Mode</p>
-                 <p className="text-slate-900 dark:text-white font-bold text-lg">Hybrid / Live</p>
+                <p className="text-[9px] uppercase tracking-widest text-slate-400 font-bold">Mode</p>
+                <p className="text-slate-900 dark:text-white font-bold text-lg">Hybrid / Live</p>
               </div>
             </div>
           </div>
@@ -621,7 +621,7 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseId, onBack, onNavigat
             <h3 className="text-4xl sm:text-6xl font-display font-bold italic mb-8">Project Roadmap.</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {(['normal', 'mid', 'head', 'realtime'] as const).map((tab) => (
-                <button 
+                <button
                   key={tab}
                   onClick={() => setActiveProjectTab(tab)}
                   className={`px-8 py-4 rounded-full text-[9px] font-bold tracking-widest uppercase transition-all duration-500 ${activeProjectTab === tab ? 'bg-teal-500 text-slate-900 shadow-lg' : 'bg-white/5 text-teal-400 border border-teal-500/20 hover:bg-white/10'}`}
@@ -635,17 +635,17 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseId, onBack, onNavigat
             {data.projects[activeProjectTab].map((proj, idx) => (
               <div key={idx} className="project-reveal group p-8 rounded-[40px] bg-slate-900 border border-white/5 hover:border-teal-500/30 transition-all duration-700 flex flex-col h-full luxury-hover">
                 <div className="flex items-center justify-between mb-6">
-                   <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center text-teal-400 group-hover:scale-110 transition-transform">
-                      {activeProjectTab === 'normal' ? <Terminal className="w-6 h-6" /> : activeProjectTab === 'mid' ? <Cpu className="w-6 h-6" /> : activeProjectTab === 'head' ? <HardDrive className="w-6 h-6" /> : <Globe className="w-6 h-6" />}
-                   </div>
-                   <div className="flex gap-2">
-                      {proj.tags.slice(0, 2).map((tag, i) => <span key={i} className="px-3 py-1 rounded-full bg-white/5 text-[8px] font-bold text-teal-400 uppercase tracking-widest">{tag}</span>)}
-                   </div>
+                  <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center text-teal-400 group-hover:scale-110 transition-transform">
+                    {activeProjectTab === 'normal' ? <Terminal className="w-6 h-6" /> : activeProjectTab === 'mid' ? <Cpu className="w-6 h-6" /> : activeProjectTab === 'head' ? <HardDrive className="w-6 h-6" /> : <Globe className="w-6 h-6" />}
+                  </div>
+                  <div className="flex gap-2">
+                    {proj.tags.slice(0, 2).map((tag, i) => <span key={i} className="px-3 py-1 rounded-full bg-white/5 text-[8px] font-bold text-teal-400 uppercase tracking-widest">{tag}</span>)}
+                  </div>
                 </div>
                 <h4 className="text-xl font-display font-bold text-white mb-4 italic leading-tight">{proj.title}</h4>
                 <p className="text-slate-400 text-sm font-light leading-relaxed mb-8 flex-grow">{proj.description}</p>
                 <div className="flex items-center gap-3 text-teal-500 font-bold text-[9px] uppercase tracking-widest pt-4 border-t border-white/5">
-                   <CheckCircle2 className="w-4 h-4" /> Professional Grade
+                  <CheckCircle2 className="w-4 h-4" /> Professional Grade
                 </div>
               </div>
             ))}
@@ -661,57 +661,57 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ courseId, onBack, onNavigat
               <h2 className="text-[10px] uppercase tracking-[0.5em] text-teal-600 font-bold">Verified Success</h2>
               <h3 className="text-4xl sm:text-6xl font-display font-bold text-slate-900 dark:text-white italic">Graduate Feedback.</h3>
             </div>
-            
+
             <div className="flex items-center gap-4">
-               <button 
-                  onClick={prevReview} 
-                  className="w-14 h-14 rounded-full border-2 border-slate-900 dark:border-teal-500 flex items-center justify-center hover:bg-slate-900 hover:text-white dark:hover:bg-teal-500 dark:hover:text-slate-900 transition-all shadow-xl active:scale-90"
-               >
-                  <ChevronLeft className="w-6 h-6" />
-               </button>
-               <button 
-                  onClick={nextReview} 
-                  className="w-14 h-14 rounded-full border-2 border-slate-900 dark:border-teal-500 flex items-center justify-center hover:bg-slate-900 hover:text-white dark:hover:bg-teal-500 dark:hover:text-slate-900 transition-all shadow-xl active:scale-90"
-               >
-                  <ChevronRight className="w-6 h-6" />
-               </button>
+              <button
+                onClick={prevReview}
+                className="w-14 h-14 rounded-full border-2 border-slate-900 dark:border-teal-500 flex items-center justify-center hover:bg-slate-900 hover:text-white dark:hover:bg-teal-500 dark:hover:text-slate-900 transition-all shadow-xl active:scale-90"
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+              <button
+                onClick={nextReview}
+                className="w-14 h-14 rounded-full border-2 border-slate-900 dark:border-teal-500 flex items-center justify-center hover:bg-slate-900 hover:text-white dark:hover:bg-teal-500 dark:hover:text-slate-900 transition-all shadow-xl active:scale-90"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
             </div>
           </div>
 
           <div className="relative">
-             <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentReviewIndex * 100}%)` }}>
-                {data.reviews.map((rev, idx) => (
-                   <div key={idx} className="w-full flex-shrink-0 px-4">
-                      <div className="review-reveal p-10 sm:p-14 rounded-[48px] bg-slate-50 dark:bg-slate-800 border-[3px] border-slate-900 dark:border-slate-700 hover:border-teal-500 hover:shadow-[0_20px_50px_rgba(20,184,166,0.15)] transition-all duration-700 group relative">
-                        <Quote className="absolute top-8 right-10 w-24 h-24 text-teal-600/5 group-hover:text-teal-600/10 transition-all" />
-                        <p className="text-2xl sm:text-3xl text-slate-600 dark:text-slate-300 italic font-light leading-relaxed mb-12 relative z-10 max-w-4xl">"{rev.comment}"</p>
-                        <div className="flex items-center gap-6 border-t-2 border-slate-100 dark:border-slate-700 pt-10">
-                          <div className="relative">
-                             <img src={rev.image} alt={rev.name} className="w-16 h-16 sm:w-20 sm:h-20 rounded-[28px] border-4 border-white dark:border-slate-700 shadow-2xl group-hover:scale-110 transition-transform" />
-                             <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-white border-2 border-white"><CheckCircle2 className="w-4 h-4" /></div>
-                          </div>
-                          <div>
-                            <h5 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white group-hover:text-teal-600 transition-colors">{rev.name}</h5>
-                            <div className="flex items-center gap-4 mt-1">
-                               {renderRating(rev.rating)}
-                               <span className="text-[10px] uppercase tracking-widest font-bold text-teal-600">Verified Alumnus</span>
-                            </div>
-                          </div>
+            <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentReviewIndex * 100}%)` }}>
+              {data.reviews.map((rev, idx) => (
+                <div key={idx} className="w-full flex-shrink-0 px-4">
+                  <div className="review-reveal p-10 sm:p-14 rounded-[48px] bg-slate-50 dark:bg-slate-800 border-[3px] border-slate-900 dark:border-slate-700 hover:border-teal-500 hover:shadow-[0_20px_50px_rgba(20,184,166,0.15)] transition-all duration-700 group relative">
+                    <Quote className="absolute top-8 right-10 w-24 h-24 text-teal-600/5 group-hover:text-teal-600/10 transition-all" />
+                    <p className="text-2xl sm:text-3xl text-slate-600 dark:text-slate-300 italic font-light leading-relaxed mb-12 relative z-10 max-w-4xl">"{rev.comment}"</p>
+                    <div className="flex items-center gap-6 border-t-2 border-slate-100 dark:border-slate-700 pt-10">
+                      <div className="relative">
+                        <img src={rev.image} alt={rev.name} className="w-16 h-16 sm:w-20 sm:h-20 rounded-[28px] border-4 border-white dark:border-slate-700 shadow-2xl group-hover:scale-110 transition-transform" />
+                        <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-white border-2 border-white"><CheckCircle2 className="w-4 h-4" /></div>
+                      </div>
+                      <div>
+                        <h5 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white group-hover:text-teal-600 transition-colors">{rev.name}</h5>
+                        <div className="flex items-center gap-4 mt-1">
+                          {renderRating(rev.rating)}
+                          <span className="text-[10px] uppercase tracking-widest font-bold text-teal-600">Verified Alumnus</span>
                         </div>
                       </div>
-                   </div>
-                ))}
-             </div>
-             
-             <div className="flex justify-center gap-3 mt-12">
-                {data.reviews.map((_, i) => (
-                   <button 
-                      key={i} 
-                      onClick={() => setCurrentReviewIndex(i)}
-                      className={`h-2 rounded-full transition-all duration-500 ${currentReviewIndex === i ? 'w-12 bg-teal-500' : 'w-2 bg-slate-200 dark:bg-slate-800 hover:bg-teal-500/50'}`} 
-                   />
-                ))}
-             </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex justify-center gap-3 mt-12">
+              {data.reviews.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentReviewIndex(i)}
+                  className={`h-2 rounded-full transition-all duration-500 ${currentReviewIndex === i ? 'w-12 bg-teal-500' : 'w-2 bg-slate-200 dark:bg-slate-800 hover:bg-teal-500/50'}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -729,11 +729,11 @@ const ToolIcon: React.FC<{ tool: string; name: string }> = ({ tool, name }) => {
   return (
     <div className="aspect-square bg-white/5 rounded-[32px] flex flex-col items-center justify-center p-6 hover:bg-white transition-all duration-700 border border-white/5 group shadow-xl relative overflow-hidden">
       {!error ? (
-        <img 
-          src={`https://cdn.simpleicons.org/${tool}/2dd4bf`} 
-          alt={name} 
+        <img
+          src={`https://cdn.simpleicons.org/${tool}/2dd4bf`}
+          alt={name}
           onError={() => setError(true)}
-          className="w-12 h-12 object-contain filter brightness-150 group-hover:brightness-100 transition-all mb-2" 
+          className="w-12 h-12 object-contain filter brightness-150 group-hover:brightness-100 transition-all mb-2"
         />
       ) : (
         <div className="w-12 h-12 flex items-center justify-center text-teal-500 group-hover:text-teal-600 transition-colors mb-2">

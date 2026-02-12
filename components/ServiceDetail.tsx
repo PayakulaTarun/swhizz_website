@@ -21,7 +21,7 @@ const serviceContent: Record<string, any> = {
       "Networking with fellow aspirants",
       "Personalized focus from trainers"
     ],
-    image: "https://images.unsplash.com/photo-1524178232363-1fb28f74b081?auto=format&fit=crop&q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1000",
     stats: [{ label: "Capacity", value: "30 per batch" }, { label: "Success Rate", value: "98%" }]
   },
   'online': {
@@ -36,12 +36,12 @@ const serviceContent: Record<string, any> = {
       "Flexible evening/weekend batches",
       "Global community access"
     ],
-    image: "https://images.unsplash.com/photo-1610484826967-09c5720778c7?auto=format&fit=crop&q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1593642632823-8f78536788c6?auto=format&fit=crop&q=80&w=1000",
     stats: [{ label: "Global Reach", value: "15+ Countries" }, { label: "Platform", value: "HD Live Sync" }]
   },
   'mentorship': {
     title: "Industry Mentorship",
-    subtitle: "Elite 1:1 Professional Guidance",
+    subtitle: "Swhizz 1:1 Professional Guidance",
     icon: Users,
     description: "Don't just learn skills; understand the industry. Get mentored by professionals currently working at top-tier tech giants like Amazon, Salesforce, and Google.",
     features: [
@@ -51,7 +51,7 @@ const serviceContent: Record<string, any> = {
       "Soft skill & leadership training",
       "Weekly progress audits"
     ],
-    image: "https://images.unsplash.com/photo-1515162305285-0293e4767cc2?auto=format&fit=crop&q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1000",
     stats: [{ label: "Mentors", value: "50+ Experts" }, { label: "Experience", value: "10+ Years" }]
   },
   'corporate': {
@@ -66,7 +66,7 @@ const serviceContent: Record<string, any> = {
       "Code review & feedback",
       "Experience certificate provided"
     ],
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1000",
     stats: [{ label: "Stipend Range", value: "5k - 10k" }, { label: "Success", value: "Real Projects" }]
   },
   'placement': {
@@ -81,7 +81,7 @@ const serviceContent: Record<string, any> = {
       "Direct job referral network",
       "Post-placement onboarding help"
     ],
-    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1000",
     stats: [{ label: "Partners", value: "200+ Firms" }, { label: "Hired", value: "9k+ Alumni" }]
   },
   'marketing': {
@@ -96,7 +96,7 @@ const serviceContent: Record<string, any> = {
       "Personal brand narrative build",
       "Global recruiter visibility boost"
     ],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
     stats: [{ label: "Reach", value: "Global" }, { label: "Visibility", value: "Top 1%" }]
   }
 };
@@ -121,15 +121,15 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ serviceId, onBack, theme 
     <div className="min-h-screen bg-white dark:bg-slate-900 pb-24 overflow-x-hidden">
       {/* Detail Nav */}
       <nav className="fixed top-0 left-0 w-full z-[90] glass-effect py-4 px-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
-         <button onClick={onBack} className="group flex items-center gap-3 text-slate-900 dark:text-white font-bold text-[10px] uppercase tracking-[0.3em] transition-all">
-            <ArrowLeft className="w-5 h-5 group-hover:-translate-x-2 transition-transform" />
-            <span>Back to Services</span>
+        <button onClick={onBack} className="group flex items-center gap-3 text-slate-900 dark:text-white font-bold text-[10px] uppercase tracking-[0.3em] transition-all">
+          <ArrowLeft className="w-5 h-5 group-hover:-translate-x-2 transition-transform" />
+          <span>Back to Services</span>
+        </button>
+        <div className="flex items-center gap-4">
+          <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="px-8 py-3 teal-gradient text-white rounded-full text-[10px] font-bold uppercase tracking-[0.3em] shadow-lg hover:scale-105 transition-all">
+            Book Consultation
           </button>
-          <div className="flex items-center gap-4">
-             <button onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})} className="px-8 py-3 teal-gradient text-white rounded-full text-[10px] font-bold uppercase tracking-[0.3em] shadow-lg hover:scale-105 transition-all">
-                Book Consultation
-             </button>
-          </div>
+        </div>
       </nav>
 
       {/* Hero Section */}
@@ -151,12 +151,12 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ serviceId, onBack, theme 
               {content.description}
             </p>
             <div className="grid grid-cols-2 gap-6 pt-4">
-               {content.stats.map((stat: any, i: number) => (
-                  <div key={i} className="space-y-1">
-                     <p className="text-[9px] uppercase tracking-widest text-slate-400 font-bold">{stat.label}</p>
-                     <p className="text-slate-900 dark:text-white font-bold text-lg">{stat.value}</p>
-                  </div>
-               ))}
+              {content.stats.map((stat: any, i: number) => (
+                <div key={i} className="space-y-1">
+                  <p className="text-[9px] uppercase tracking-widest text-slate-400 font-bold">{stat.label}</p>
+                  <p className="text-slate-900 dark:text-white font-bold text-lg">{stat.value}</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className="reveal active hidden lg:block">
@@ -181,16 +181,16 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ serviceId, onBack, theme 
             {content.features.map((feature: string, idx: number) => (
               <div key={idx} className="p-8 rounded-[40px] bg-white/5 border border-white/5 hover:border-teal-500/30 transition-all duration-700 flex flex-col gap-6 group">
                 <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center text-teal-400 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-white transition-all">
-                   <CheckCircle2 className="w-6 h-6" />
+                  <CheckCircle2 className="w-6 h-6" />
                 </div>
                 <h4 className="text-xl font-bold italic">{feature}</h4>
                 <p className="text-xs text-slate-400 uppercase tracking-widest font-bold">Professional Delivery</p>
               </div>
             ))}
             <div className="p-8 rounded-[40px] bg-teal-500 text-slate-900 flex flex-col justify-center items-center text-center gap-4 group cursor-default">
-               <Target className="w-12 h-12 animate-pulse" />
-               <h4 className="text-2xl font-display font-bold italic">Career Obsessed</h4>
-               <p className="text-sm font-bold uppercase tracking-widest opacity-60">Verified Support</p>
+              <Target className="w-12 h-12 animate-pulse" />
+              <h4 className="text-2xl font-display font-bold italic">Career Obsessed</h4>
+              <p className="text-sm font-bold uppercase tracking-widest opacity-60">Verified Support</p>
             </div>
           </div>
         </div>

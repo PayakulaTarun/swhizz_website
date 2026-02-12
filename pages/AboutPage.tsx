@@ -63,7 +63,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onBack, theme }) => {
             <div className="max-w-7xl mx-auto text-center reveal active">
                <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm text-teal-600 dark:text-teal-400 font-bold text-[10px] tracking-[0.4em] uppercase mb-10">
                   <Sparkles className="w-4 h-4 text-yellow-500 animate-pulse" />
-                  Elite Success Blueprint
+                  Swhizz Success Blueprint
                </div>
                <h1 className="text-6xl sm:text-9xl font-display font-bold text-slate-900 dark:text-white leading-[0.85] italic tracking-tighter mb-8">
                   Success <span className="text-teal-600">Formula.</span>
@@ -156,7 +156,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onBack, theme }) => {
                <div className="text-center mb-24 reveal">
                   <h2 className="text-[10px] uppercase tracking-[0.5em] text-teal-400 font-bold mb-6">Excellence Metrics</h2>
                   <h3 className="text-5xl sm:text-8xl font-display font-bold italic tracking-tighter">Why Choose Swhizz?</h3>
-                  <p className="text-slate-400 mt-8 max-w-2xl mx-auto font-light text-xl leading-relaxed">The elite training environment built for high-stakes IT career transformations.</p>
+                  <p className="text-slate-400 mt-8 max-w-2xl mx-auto font-light text-xl leading-relaxed">The Swhizz training environment built for high-stakes IT career transformations.</p>
                </div>
 
                <div className="relative w-full overflow-hidden">
@@ -190,7 +190,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onBack, theme }) => {
                </p>
                <div className="mt-12 flex flex-col items-center">
                   <div className="w-16 h-1 bg-teal-500 mb-6" />
-                  <p className="text-slate-900 dark:text-white font-bold text-lg">Elite Training Hub</p>
+                  <p className="text-slate-900 dark:text-white font-bold text-lg">Swhizz Technologies</p>
                   <p className="text-[10px] uppercase tracking-[0.4em] text-teal-600 font-bold">Madhapur, Hyderabad</p>
                </div>
             </div>

@@ -80,15 +80,15 @@ const Journey: React.FC<JourneyProps> = ({ onEnroll }) => {
             <div key={i} className="relative flex flex-col h-full group">
               <div className={`p-10 rounded-[50px] h-full border border-slate-100 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-3 ${step.color} relative overflow-hidden`}>
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/40 blur-[40px] rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-1000" />
-                
+
                 <div className="w-16 h-16 rounded-2xl luxury-gradient flex items-center justify-center text-white mb-10 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 relative z-10">
                   <step.icon className="w-8 h-8" />
                 </div>
-                
+
                 <div className="space-y-4 relative z-10">
                   <span className="text-[10px] uppercase tracking-widest font-bold text-slate-400">{step.title}</span>
                   <h4 className="text-2xl font-display font-bold text-slate-900 group-hover:text-teal-600 transition-colors">{step.label}</h4>
-                  
+
                   <ul className="space-y-4 pt-6">
                     {step.items.map((item, idx) => (
                       <li key={idx} className="flex gap-4 text-sm text-slate-600 font-light leading-relaxed group/item">
@@ -101,7 +101,7 @@ const Journey: React.FC<JourneyProps> = ({ onEnroll }) => {
               </div>
               {i < steps.length - 1 && (
                 <div className="hidden lg:flex absolute top-1/2 -right-4 z-10 w-10 h-10 bg-white border border-slate-100 rounded-full items-center justify-center shadow-md -translate-y-1/2 group-hover:translate-x-4 transition-all duration-500 group-hover:bg-teal-500 group-hover:text-white">
-                   <ChevronRight className="w-5 h-5" />
+                  <ChevronRight className="w-5 h-5" />
                 </div>
               )}
             </div>
@@ -110,23 +110,23 @@ const Journey: React.FC<JourneyProps> = ({ onEnroll }) => {
 
         {/* Career Transition Panel */}
         <div className="mt-24 p-12 sm:p-20 rounded-[60px] bg-white border border-slate-100 flex flex-col md:flex-row items-center justify-between gap-12 reveal shadow-xl hover:shadow-2xl transition-all duration-500">
-           <div className="space-y-4 text-center md:text-left lg:w-3/5">
-              <h4 className="text-3xl sm:text-4xl font-display font-bold text-slate-900 italic">Your Elite Transition Path</h4>
-              <p className="text-slate-500 text-lg font-light leading-relaxed">Watch your profile evolve from a student to an industry leader: <span className="font-bold text-teal-600">Admin → Dev → Architect.</span></p>
-              <div className="flex gap-2 pt-4 justify-center md:justify-start">
-                 {Array.from({length: 5}).map((_, i) => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
-              </div>
-           </div>
-           <div className="lg:w-2/5 flex flex-col items-center gap-4">
-              <button 
-                onClick={onEnroll}
-                className="px-14 py-6 bg-[#020617] text-white rounded-full font-bold text-xl shadow-2xl hover:scale-110 transition-all group flex items-center gap-3"
-              >
-                 <span className="relative z-10">Start the Formula</span>
-                 <Zap className="w-6 h-6 animate-pulse text-teal-500" />
-              </button>
-              <p className="text-[10px] uppercase font-bold text-slate-300 tracking-[0.2em]">Validated by 9,000+ Alumni</p>
-           </div>
+          <div className="space-y-4 text-center md:text-left lg:w-3/5">
+            <h4 className="text-3xl sm:text-4xl font-display font-bold text-slate-900 italic">Your Swhizz Transition Path</h4>
+            <p className="text-slate-500 text-lg font-light leading-relaxed">Watch your profile evolve from a student to an industry leader: <span className="font-bold text-teal-600">Admin → Dev → Architect.</span></p>
+            <div className="flex gap-2 pt-4 justify-center md:justify-start">
+              {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
+            </div>
+          </div>
+          <div className="lg:w-2/5 flex flex-col items-center gap-4">
+            <button
+              onClick={onEnroll}
+              className="px-14 py-6 bg-[#020617] text-white rounded-full font-bold text-xl shadow-2xl hover:scale-110 transition-all group flex items-center gap-3"
+            >
+              <span className="relative z-10">Start the Formula</span>
+              <Zap className="w-6 h-6 animate-pulse text-teal-500" />
+            </button>
+            <p className="text-[10px] uppercase font-bold text-slate-300 tracking-[0.2em]">Validated by 9,000+ Alumni</p>
+          </div>
         </div>
       </div>
     </section>

@@ -94,7 +94,7 @@ const Placements: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10 text-center mb-24 reveal">
         <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full bg-[#020617] border border-white/10 shadow-xl text-teal-400 font-bold text-[10px] tracking-[0.5em] uppercase mb-12">
           <Building2 className="w-4 h-4" />
-          Elite Hiring Network
+          Swhizz Hiring Network
         </div>
         <h3 className="text-6xl md:text-9xl font-display font-bold text-slate-900 dark:text-white italic leading-[0.85] tracking-tighter mb-12">
           Leader's <span className="text-teal-600 block sm:inline">Wall.</span>
