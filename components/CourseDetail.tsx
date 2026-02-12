@@ -169,10 +169,10 @@ const courseData: Record<string, CourseData> = {
     level: "Professional",
     icon: Cloud,
     modules: [
-      { name: "Linux Administration", details: "Mastering the shell and operating system fundamentals for high-performance servers.", image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=400" },
-      { name: "Container Orchestration", details: "Deep dive into Docker images and production-grade Kubernetes clusters.", image: "https://images.unsplash.com/photo-1605745341112-85968b193ef5?auto=format&fit=crop&q=80&w=400" },
-      { name: "Automation Pipelines", details: "Building CI/CD workflows with Jenkins, GitLab, and Terraform for multi-cloud deployments.", image: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&q=80&w=400" },
-      { name: "AWS Solutions Architect", details: "Designing scalable, fault-tolerant systems using AWS EC2, S3, RDS, and Lambda.", image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" }
+      { name: "Linux Administration", details: "Mastering the shell and operating system fundamentals for high-performance servers.", image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=500" },
+      { name: "Container Orchestration", details: "Deep dive into Docker images and production-grade Kubernetes clusters.", image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&q=80&w=500" },
+      { name: "Automation Pipelines", details: "Building CI/CD workflows with Jenkins, GitLab, and Terraform for multi-cloud deployments.", image: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&q=80&w=500" },
+      { name: "AWS Solutions Architect", details: "Designing scalable, fault-tolerant systems using AWS EC2, S3, RDS, and Lambda.", image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=500" }
     ],
     tools: ["amazonwebservices", "docker", "kubernetes", "jenkins", "terraform", "ansible", "linux"],
     career: "DevOps Lead, Cloud Architect, Site Reliability Engineer",
@@ -220,10 +220,10 @@ const courseData: Record<string, CourseData> = {
     level: "Advanced",
     icon: ShieldAlert,
     modules: [
-      { name: "Ethical Hacking", details: "Footprinting, Reconnaissance, and scanning networks for vulnerabilities.", image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=400" },
-      { name: "Web App Security", details: "OWASP Top 10, SQL injection, XSS, and broken authentication testing.", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" },
-      { name: "Network VAPT", details: "Attacking wireless networks, privilege escalation, and lateral movement.", image: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&q=80&w=400" },
-      { name: "SOC Operations", details: "Incident response, log analysis with Splunk, and threat hunting.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=400" }
+      { name: "Ethical Hacking", details: "Footprinting, Reconnaissance, and scanning networks for vulnerabilities.", image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=600" },
+      { name: "Web App Security", details: "OWASP Top 10, SQL injection, XSS, and broken authentication testing.", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600" },
+      { name: "Network VAPT", details: "Attacking wireless networks, privilege escalation, and lateral movement.", image: "https://images.unsplash.com/photo-1551721434-8b94ddff0e6d?auto=format&fit=crop&q=80&w=600" },
+      { name: "SOC Operations", details: "Incident response, log analysis with Splunk, and threat hunting.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600" }
     ],
     tools: ["kalilinux", "wireshark", "metasploit", "splunk", "python", "nmap", "burpsuite"],
     career: "SOC Analyst, Pentester, Security Architect",
@@ -322,10 +322,10 @@ const courseData: Record<string, CourseData> = {
     level: "Beginner to Pro",
     icon: SearchIcon,
     modules: [
-      { name: "Manual Testing", details: "SDLC, STLC, Test cases, and Defect life cycle fundamentals.", image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=400" },
-      { name: "Selenium Automation", details: "Java based automation for cross-browser web application testing.", image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80&w=400" },
-      { name: "API Testing", details: "Testing RESTful services using Postman and RestAssured.", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=400" },
-      { name: "Performance Testing", details: "Load testing and stress testing using Apache JMeter.", image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=400" }
+      { name: "Manual Testing", details: "SDLC, STLC, Test cases, and Defect life cycle fundamentals.", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=500" },
+      { name: "Selenium Automation", details: "Java based automation for cross-browser web application testing.", image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=500" },
+      { name: "API Testing", details: "Testing RESTful services using Postman and RestAssured.", image: "https://images.unsplash.com/photo-1623282033815-40b05d96c903?auto=format&fit=crop&q=80&w=500" },
+      { name: "Performance Testing", details: "Load testing and stress testing using Apache JMeter.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=500" }
     ],
     tools: ["selenium", "postman", "apachejmeter", "jenkins", "openjdk", "github", "testng"],
     career: "QA Automation Engineer, Test Lead, SDET",
