@@ -30,12 +30,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigateToSection }) => {
               <img
                 src="/images/logo.png"
                 alt="Swhizz Technologies Logo"
-                className="h-12 w-auto object-contain bg-white/10 p-1 rounded-lg backdrop-blur-sm border border-white/5 group-hover:scale-105 transition-transform duration-500"
+                className="h-20 w-auto object-contain bg-white/10 p-2 rounded-xl backdrop-blur-sm border border-white/5 group-hover:scale-105 transition-transform duration-500"
               />
-              <div>
-                <h4 className="text-2xl font-display font-bold tracking-tight text-white group-hover:text-teal-400 transition-colors">Swhizz Technologies</h4>
-                <p className="text-[9px] tracking-[0.2em] uppercase text-teal-400 font-bold -mt-1">Training & Placement Consultancy</p>
-              </div>
             </div>
             <p className="text-slate-400 font-light leading-relaxed max-w-sm italic text-sm">
               "We don't just teach skills; we build IT professionals. Join the ranks of Swhizz graduates."
